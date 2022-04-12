@@ -33,7 +33,7 @@ public class FairBillingTest {
 	// This verifies that the file is loaded - Empty or Not
 	@Test
 	public void testProcessLoadFile() throws IOException {
-		List<String> file = fairBilling.loadFileToList("test.log");
+		List<String> file = fairBilling.loadFileToList("./src/test/java/com/fairbilling/test.log");
 		assertFalse(file.isEmpty());
 		assertEquals("Test file loaded correctly", 11, file.size());
 	}
